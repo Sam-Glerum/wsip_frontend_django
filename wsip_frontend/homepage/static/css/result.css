@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    text-align: center;
+    /* grid-template-columns: 1fr 1f 1fr; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    /* grid-template-areas:
+      "Header Header Header"
+      "Body Body Body"
+      "Footer Footer Footer"; */
+      grid-template-areas:
+      "Header Header Header"
+      "Body"
+      "Footer";
+  }
+  
+  .Header { grid-area: Header; }
+  
+  .Body { grid-area: Body; }
+  
+  .Footer { grid-area: Footer; }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="steamIdForm">
+        <form action=get_steam_games method="post">
+            {% csrf_token %}
+            <label for="steamIdInput">Enter Steam ID</label>
+            <input id="steamIdInput" type="text" name="steamIdInput" 
+            value="76561198049183521" maxlength="30" required>
+            <input type="submit" value="OK">
+                
+        </form>
+    </div>
+</body>
+</html>

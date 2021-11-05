@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/result.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="header">
+            <h3>WSIP</h3>
+        </div>
+
+        <div class="body">
+            <img src="{{gameImageUrl}}" alt="game_image">
+            <h1>{{randomGame.name}}</h1>
+        </div>
+
+        <div class="footer">
+            <p>footer</p>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
